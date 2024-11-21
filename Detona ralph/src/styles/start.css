@@ -1,0 +1,102 @@
+/*Tela iniclio*/
+.start-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    background-image: url(../imagens/wall.png);
+
+}
+
+.start-screen h1{
+    font-size: 3rem;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translate(-30px);
+    animation: titleAnimation 2s ease-out forwards;
+
+}
+
+@keyframes titleAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+}
+}
+
+.start-screen button{
+    margin: 30px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #470913;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-family: "Press Start 2P", cursive;
+    opacity: 0;
+    transform: translate(20px);
+    animation: slideUp 1s ease-out forwards 1s;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translate(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.start-screen button:hover{
+    background-color: #ff5a00;
+}
+
+@keyframes pulseButton {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#toggle-sound {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #470913;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#toggle-sound:hover {
+    background-color: #470913;
+    transform: scale(1.1);
+}
+
+#toggle-sound:active {
+    transform: scale(0.95);
+}

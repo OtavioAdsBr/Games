@@ -1,0 +1,85 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(../imagens/wall.png);
+    background-position: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 90px;
+    width: 100%;
+    background-color: #000000;
+    color:#ffffff;
+    border-bottom: 5px solid  #470913;
+}
+.panel{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 10px;
+}
+.square{
+    height: 20vw;
+    width: 20vw;
+    max-width: 180px;
+    max-height: 180px;
+    border: 1px solid #8b3313;
+    background-color: #cb8273;
+    box-shadow: 0 4px 8px #0000001a;
+    transition: all 0.3s ease;
+}
+
+.square:hover{
+    background-color: #f0d4d4;
+    box-shadow: 0 8px 16px #0000002a;
+}
+.enemy{ 
+    background-image: url(../imagens/ralph.png);
+    background-size: cover;
+}
+.menu-lives{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2){
+    margin-left: 1rem;
+    text-align: center;
+    margin: 15px;
+}
+.menu-lives img{
+    margin-right: 1rem;
+}
+
+.id-timelife{
+    margin-left: 1rem;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .square{
+        height: 30vw;
+        width: 30vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .square{
+        height: 35vw;
+        width: 35vw;
+    }
+}

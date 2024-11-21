@@ -1,0 +1,131 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: o;
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    font-family: 'Press Start 2P', cursive;
+    background-image: url(../imagens/wall.png);
+    padding: 30px;
+}
+
+.alert-container{
+    text-align: center;
+}
+
+.agressive-image{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    animation: shake 0.5s infinite alternate;
+}
+
+@keyframes shake {
+    0% { transform: translateX(-10px); }
+    100% { transform: translateX(10px); }
+}
+
+h1{
+    font-size: 2rem;
+    margin-bottom: 40px;    
+}
+
+.message{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);   text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-out;
+}
+
+button{
+    padding: 15px 40px;
+    color: #000000;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10 px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    background-size: 400% 400%;
+
+}
+
+button:hover{
+    background-color: #ffffff;
+    border: 2px solid #8b0000;
+    transform: translateY(2px);
+}
+
+button:active{
+    background-color: #2e2e2e;
+    border: 2px solid #8b0000;
+    transform: translateY(2px);
+}
+
+button:focus{
+    outline: none; 
+    box-shadow: 0 0 10px 3px rgba(231, 76, 60, 0.6);
+}
+
+#exit-button {
+    display: flex;  
+    align-items: center;  
+    justify-content: center; 
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff0000;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    background-position: left center;
+    padding-left: 50px;  
+    padding-right: 20px; 
+}
+
+#exit-button img {
+    width: 30px;  
+    height: 30px;
+    margin-right: 10px;
+}
+
+#back-to-game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    background-color: #8b0000;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    margin: 20px auto 0;
+}
+
+#back-to-game:hover {
+    background-color: #8b0000;
+    transform: translateY(-3px);
+}
+
+#back-to-game:active {
+    background-color: #8b0000;
+    transform: translateY(2px);
+}
+
+#back-to-game:focus {
+    outline: none;
+    box-shadow: 0 0 10px 3px #8b0000(40, 167, 69, 0.6);
+}
+
+#back-to-game img {
+    margin-bottom: 10px;
+}
+

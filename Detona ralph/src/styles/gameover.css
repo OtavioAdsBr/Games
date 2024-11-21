@@ -1,0 +1,66 @@
+
+.game-over-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000000d9;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    animation: bounceIn 0.8s ease-out;
+}
+
+body {
+    background: linear-gradient(45deg, #8b0000, #ffffff);
+    background-size: 400% 400%;
+    animation: gradientBackground 6s ease infinite;
+}
+
+
+#back-to-menu {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Press Start 2P", cursive;
+    color: #fff;
+    background-color: #470913;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#back-to-menu:hover {
+    background-color: #000000;
+}
+
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5) translate(-50%, -50%);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1) translate(-50%, -50%);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) translate(-50%, -50%);
+    }
+}
