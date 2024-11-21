@@ -58,7 +58,7 @@ Para rodar o jogo localmente no seu computador, siga os passos abaixo:
 
 Clone o repositório:
 
-git clone https://github.com/SEU_USUARIO/detona-ralph.git
+git clone https://github.com/OtavioAdsBr/Games/tree/main/Detona%20ralph
 
 - Navegue até o diretório do projeto:
 
