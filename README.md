@@ -1,4 +1,4 @@
-# 🎮 Jogos - Desenvolvendo com JavaScript, CSS e HTML 🚀
+# 🎮Jogos - Desenvolvendo com JavaScript, CSS e HTML 🚀
 
 ## Descrição 📜
 Este repositório contém projetos de **jogos** desenvolvidos com **JavaScript**, **CSS** e **HTML**. O objetivo é criar jogos simples e divertidos que ajudem a melhorar minhas habilidades em desenvolvimento web, além de proporcionar diversão para quem jogar! 🎉
