@@ -12,6 +12,7 @@ Aqui você encontrará jogos que estou desenvolvendo e que serão atualizados re
 - **Pong** 🏓
 - **Snake Game** 🐍
 - **Jogo de Memória** 🧠
+- **Yu-Gi-Oh** 🎴
 
 ### 🛠️ Tecnologias Usadas
 - HTML: Para a estruturação da página 🏗️
